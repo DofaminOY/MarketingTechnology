@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
                return;
            } else {
                
-               result.textContent = quantity / (((((+costWeek * +middleWeek) - (((+returnPay + +commission) * (+costWeek * +middleWeek)) / 100)) * +quantitySubscriptions) / 100) - (cpi - (cpi * (noPay / 100))))
+               result.textContent = Math.round(quantity / (((((+costWeek * +middleWeek) - (((+returnPay + +commission) * (+costWeek * +middleWeek)) / 100)) * +quantitySubscriptions) / 100) - (cpi - (cpi * (noPay / 100)))))
                
           
 

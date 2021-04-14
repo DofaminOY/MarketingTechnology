@@ -2,9 +2,14 @@
     
     display: inline-block;
     color: blue;
-    margin-top: 7%;
+    margin-top: 6%;
+    padding-top: 1%;
+    
     }
     
+    .calculating__choose-item{
+        border-radius: 5em;
+    }
 #choose{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;

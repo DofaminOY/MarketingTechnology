@@ -8,18 +8,17 @@ window.addEventListener('DOMContentLoaded', () => {
        function calcTotal() {
         
            if (!quantity  || !commission || !costWeek || !quantitySubscriptions || !middleWeek || !noPay || !cpi || !returnPay) {
-               result.textContent = '____'; // Можете придумать что угодно
+               result.textContent = '____'; 
                return;
            } else {
                
-               result.textContent = quantity / ((((costWeek * middleWeek) * quantitySubscriptions) / 100) - (((100 - noPay) * cpi) / 100) - ((((costWeek * middleWeek) * quantitySubscriptions) * (returnPay / 100)) / 100) - ((((costWeek * middleWeek) * quantitySubscriptions) * (commission / 100)) / 100)) 
-              
-            //   (((costWeek * middleWeek) * quantitySubscriptions) / 100)
-            //   (((100 - noPay) * cpi) / 100)
-            //   ((((costWeek * middleWeek) * quantitySubscriptions) * (returnPay / 100)) / 100)
-            //   ((((costWeek * middleWeek) * quantitySubscriptions) * (commission / 100)) / 100)
-            //   quantity / ()  
+               result.textContent = quantity / (((((+costWeek * +middleWeek) - (((+returnPay + +commission) * (+costWeek * +middleWeek)) / 100)) * +quantitySubscriptions) / 100) - (cpi - (cpi * (noPay / 100))))
+               
+          
 
+
+
+            
            }
        }
    

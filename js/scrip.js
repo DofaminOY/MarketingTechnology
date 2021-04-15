@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
        // Calculator
 
        const result = document.querySelector('.calculating__result span');
-       let calc = quantity = 20000 , commission = 30, costWeek = 7, quantitySubscriptions = 3, middleWeek = 10, noPay = 10, cpi = 1.1, returnPay = 5;
+       let calc = quantity = 10000 , commission = 30, costWeek = 7, quantitySubscriptions = 3, middleWeek = 10, noPay = 10, cpi = 1.1, returnPay = 5;
        
        
        function calcTotal() {
